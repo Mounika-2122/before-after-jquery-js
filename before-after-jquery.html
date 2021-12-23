@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("#one").click(function(){
+    $("p").before(" <b>Welcome to CGCS online classes</b>.");
+  });
+
+  $("#two").click(function(){
+    $("ol").after("<li>After Jquery element</li>");
+  });
+});
+</script>
+</head>
+<body>
+
+<p>It's a Full Stack Developer Course</p>
+<p>inserting content before and after elements.</p>
+
+<ol>
+  <li>HTML Front End</li>
+  <li>CSS Front End</li>
+  <li>Javascript Front End</li>
+</ol>
+
+<button id="one">Before</button>
+<button id="two">after</button>
+
+</body>
+</html>
